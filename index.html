@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" />
+</head>
+<style type="text/tailwindcss">
+  @layer utilities {
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+      .common-btn {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: #f4831f;
+        color: white;
+        border-radius: 5px;
+      }
+      .common-btn:hover {
+        background-color: #fc9236;
+      }
+    }
+    .swiper-pagination-bullet {
+      width: 118px !important;
+      height: 3px !important;
+      background: #ffffff !important;
+      margin: 0 4px !important;
+      border-radius: 10px !important;
+      opacity: 1 !important;
+    }
+    span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background: #f4831f !important;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    . {
+      bottom: 24px !important;
+    }
+  </style>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#f4831f",
+          black: "#000",
+          white: "#fff",
+        },
+        fontSize: {
+          h1: "56px",
+          h2: "48px",
+          h3: "40px",
+          h4: "32px",
+          h5: "24px",
+          h6: "20px",
+          p: "16px",
+          small: "14px",
+        },
+      },
+    },
+  };
+</script>
+
+<body>
+  <header>
+    <div class="relative">
+      <div class="bg-primary text-white py-2">
+        <div class="flex gap-3 items-center container">
+          <a href="#" class="text-p"><i class="fa-solid fa-phone"></i> (629) 555-0129</a>
+          <a href="#" class="text-p"><i class="fa-solid fa-envelope"></i> info@example.com</a>
+        </div>
+      </div>
+      <div class="container after:bg-[#f4831f30] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full">
+        <div class="flex justify-between items-center py-4 lg:px-0 px-4">
+          <img src="./images/logo.png" alt="logo" class="w-[100px]" />
+          <div>
+            <div class="block lg:hidden" id="navBar">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="navHeader" class="absolute left-0 w-full bg-white top-[132px] hidden z-10">
+              <ul class="lg:hidden flex flex-col gap-4 p-4 h-full  capitalize">
+                <li><a href="#" class="hover:text-primary">Home</a></li>
+                <li><a href="#" class="hover:text-primary">About</a></li>
+                <li><a href="#" class="hover:text-primary">Services</a></li>
+                <li><a href="#" class="hover:text-primary">property</a></li>
+                <li><a href="#" class="hover:text-primary">Contact</a></li>
+              </ul>
+              <div class="p-4 ">
+                <button class="common-btn w-full">Get a Quote</button>
+              </div>
+            </div>
+            <div class="hidden lg:block">
+              <ul class="flex gap-5 capitalize lg:">
+                <li><a href="#" class="hover:text-primary">Home</a></li>
+                <li><a href="#" class="hover:text-primary">About</a></li>
+                <li><a href="#" class="hover:text-primary">Services</a></li>
+                <li><a href="#" class="hover:text-primary">property</a></li>
+                <li><a href="#" class="hover:text-primary">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hidden lg:block">
+            <button class="common-btn">Get a Quote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Swiper Slides -->
+        <div class="swiper-slide">
+          <div class="relative text-white h-[83vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+            style="
+                background-image: url('https://images.unsplash.com/photo-1708133783128-5c6fa0a3bb53?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+              ">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center px-10 container mx-auto">
+              <h1 class="md:text-h1 text-h3 font-bold">
+                Find Your Dream Home Today
+              </h1>
+              <p class="text-p">
+                Discover properties that suit your lifestyle and needs. Start
+                your journey with us for a seamless home-buying experience.
+              </p>
+
+              <div class="mt-3">
+                <button class="common-btn">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative text-white h-[83vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+            style="
+                background-image: url('https://images.unsplash.com/photo-1708133783676-c4668d862f34?q=80&w=1987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+              ">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 text-center px-10 container mx-auto">
+              <h1 class="md:text-h1 text-h3 font-bold">
+                Find Your Dream Home Today
+              </h1>
+              <p class="text-p">
+                Discover properties that suit your lifestyle and needs. Start
+                your journey with us for a seamless home-buying experience.
+              </p>
+
+              <div class="mt-3">
+                <button class="common-btn">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- about us -->
+  <section class="lg:px-0 px-4">
+    <div class="container mx-auto px-4 py-12 md:py-20">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+        <div class="relative w-full md:w-1/2 bg-[#FFF5EE] rounded-3xl p-8">
+          <img
+            src="https://images.unsplash.com/photo-1628116904927-d61af0e449fc?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Modern House" class="w-full h-auto rounded-2xl shadow-lg" />
+          <div class="absolute bottom-12 left-12 bg-white rounded-xl p-4 shadow-lg flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#FF8A3C]" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M20 21a8 8 0 0 0-16 0" />
+            </svg>
+            <div>
+              <div class="text-3xl font-bold">20+</div>
+              <div class="text-gray-600 text-sm">Years Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2">
+          <div class="my-3">
+            <span class="text-[#FF8A3C] font-medium">ABOUT US</span>
+            <h2 class="text-h4 md:text-h3 font-bold">
+              Stay with us feel at home
+            </h2>
+          </div>
+          <p class="pb-6">
+            Real Estate is a vast industry that deals with the buying,
+            selling, and renting of properties. It inv transactions related to
+            residential
+          </p>
+
+          <div class="border border-gray-200 rounded-xl p-6 space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="p-2 bg-[#FFF5EE] rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#FF8A3C]" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">Your Dream Home Awaits</h3>
+                <p class="text-gray-600 mt-2">
+                  Real Estate is a vast industry that deals with the buying,
+                  selling, and renting of properties. It inv transactions
+                  related to residential, commercial
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <button class="common-btn">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Propert lsiting --> 
+  <section class="relative bg-[#f5f5f5] py-20 lg:px-0 px-4">
+    <div class="container grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="relative bg-black rounded-lg overflow-hidden hover:shadow-lg group"> 
+        <div class="relative h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Luxury Villa"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
+
+          <div class="absolute top-4 right-4">
+            <p class="bg-orange-500 text-sm text-white px-2 py-1 rounded font-medium">
+              Top 10 Deals
+            </p>
+          </div>
+        </div>
+ 
+        <div class="relative p-6 text-black bg-white"> 
+          <div class="mb-4 text-black flex items-center gap-2">
+            <h4 class="text-h4 font-bold">$500.00</h4>
+            <span class="text-black-300 text-sm">/per day</span>
+          </div> 
+          <div class="flex items-center gap-2 mb-2 text-black">
+            <i class="fa-solid fa-map"></i>
+            <span>66 Broklyant, New York America</span>
+          </div>
+ 
+          <div class="flex lg:items-center lg:gap-0 gap-4 justify-between lg:flex-row flex-col">
+            <div class="flex items-center gap-4 text-black">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bed"></i>
+                <span>3 Beds</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bath"></i>
+                <span>3 Baths</span>
+              </div>
+            </div>
+            <button
+              class="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+              BOOK NOW
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative bg-black rounded-lg overflow-hidden hover:shadow-lg group"> 
+        <div class="relative h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Luxury Villa"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
+
+          <div class="absolute top-4 right-4">
+            <p class="bg-orange-500 text-sm text-white px-2 py-1 rounded font-medium">
+              Top 10 Deals
+            </p>
+          </div>
+        </div>
+ 
+        <div class="relative p-6 text-black bg-white"> 
+          <div class="mb-4 text-black flex items-center gap-2">
+            <h4 class="text-h4 font-bold">$500.00</h4>
+            <span class="text-black-300 text-sm">/per day</span>
+          </div>
+ 
+          <div class="flex items-center gap-2 mb-2 text-black">
+            <i class="fa-solid fa-map"></i>
+            <span>66 Broklyant, New York America</span>
+          </div>
+ 
+          <div class="flex lg:items-center lg:gap-0 gap-4 justify-between lg:flex-row flex-col">
+            <div class="flex items-center gap-4 text-black">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bed"></i>
+                <span>3 Beds</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bath"></i>
+                <span>3 Baths</span>
+              </div>
+            </div>
+            <button
+              class="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+              BOOK NOW
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative bg-black rounded-lg overflow-hidden hover:shadow-lg group"> 
+        <div class="relative h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Luxury Villa"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
+
+          <div class="absolute top-4 right-4">
+            <p class="bg-orange-500 text-sm text-white px-2 py-1 rounded font-medium">
+              Top 10 Deals
+            </p>
+          </div>
+        </div>
+ 
+        <div class="relative p-6 text-black bg-white"> 
+          <div class="mb-4 text-black flex items-center gap-2">
+            <h4 class="text-h4 font-bold">$500.00</h4>
+            <span class="text-black-300 text-sm">/per day</span>
+          </div>
+ 
+          <div class="flex items-center gap-2 mb-2 text-black">
+            <i class="fa-solid fa-map"></i>
+            <span>66 Broklyant, New York America</span>
+          </div>
+ 
+          <div class="flex lg:items-center lg:gap-0 gap-4 justify-between lg:flex-row flex-col">
+            <div class="flex items-center gap-4 text-black">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bed"></i>
+                <span>3 Beds</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bath"></i>
+                <span>3 Baths</span>
+              </div>
+            </div>
+            <button
+              class="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+              BOOK NOW
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative bg-black rounded-lg overflow-hidden hover:shadow-lg group"> 
+        <div class="relative h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Luxury Villa"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
+
+          <div class="absolute top-4 right-4">
+            <p class="bg-orange-500 text-sm text-white px-2 py-1 rounded font-medium">
+              Top 10 Deals
+            </p>
+          </div>
+        </div>
+ 
+        <div class="relative p-6 text-black bg-white"> 
+          <div class="mb-4 text-black flex items-center gap-2">
+            <h4 class="text-h4 font-bold">$500.00</h4>
+            <span class="text-black-300 text-sm">/per day</span>
+          </div>
+ 
+          <div class="flex items-center gap-2 mb-2 text-black">
+            <i class="fa-solid fa-map"></i>
+            <span>66 Broklyant, New York America</span>
+          </div>
+ 
+          <div class="flex lg:items-center lg:gap-0 gap-4 justify-between lg:flex-row flex-col">
+            <div class="flex items-center gap-4 text-black">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bed"></i>
+                <span>3 Beds</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bath"></i>
+                <span>3 Baths</span>
+              </div>
+            </div>
+            <button
+              class="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+              BOOK NOW
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative bg-black rounded-lg overflow-hidden hover:shadow-lg group"> 
+        <div class="relative h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Luxury Villa"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
+
+          <div class="absolute top-4 right-4">
+            <p class="bg-orange-500 text-sm text-white px-2 py-1 rounded font-medium">
+              Top 10 Deals
+            </p>
+          </div>
+        </div>
+ 
+        <div class="relative p-6 text-black bg-white"> 
+          <div class="mb-4 text-black flex items-center gap-2">
+            <h4 class="text-h4 font-bold">$500.00</h4>
+            <span class="text-black-300 text-sm">/per day</span>
+          </div>
+ 
+          <div class="flex items-center gap-2 mb-2 text-black">
+            <i class="fa-solid fa-map"></i>
+            <span>66 Broklyant, New York America</span>
+          </div>
+ 
+          <div class="flex lg:items-center lg:gap-0 gap-4 justify-between lg:flex-row flex-col">
+            <div class="flex items-center gap-4 text-black">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bed"></i>
+                <span>3 Beds</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bath"></i>
+                <span>3 Baths</span>
+              </div>
+            </div>
+            <button
+              class="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+              BOOK NOW
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="relative bg-black rounded-lg overflow-hidden hover:shadow-lg group"> 
+        <div class="relative h-[250px]">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Luxury Villa"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
+
+          <div class="absolute top-4 right-4">
+            <p class="bg-orange-500 text-sm text-white px-2 py-1 rounded font-medium">
+              Top 10 Deals
+            </p>
+          </div>
+        </div>
+
+        <div class="relative p-6 text-black bg-white">
+          <div class="mb-4 text-black flex items-center gap-2">
+            <h4 class="text-h4 font-bold">$500.00</h4>
+            <span class="text-black-300 text-sm">/per day</span>
+          </div>
+          <div class="flex items-center gap-2 mb-2 text-black">
+            <i class="fa-solid fa-map"></i>
+            <span>66 Broklyant, New York America</span>
+          </div> 
+          <div class="flex lg:items-center lg:gap-0 gap-4 justify-between lg:flex-row flex-col">
+            <div class="flex items-center gap-4 text-black">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bed"></i>
+                <span>3 Beds</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-bath"></i>
+                <span>3 Baths</span>
+              </div>
+            </div>
+            <button
+              class="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+              BOOK NOW
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lg:px-0 px-4">
+    <div class="container py-20">
+      <div class="text-center mb-4">
+        <span class="text-[#FF8A3C] font-medium">CLIENT TESTIMONIAL</span>
+        <h2 class="text-h4 md:text-h3 font-bold">Optimum Homes & Properties property for you</h2>
+      </div>
+      <div class="swiper-container py-[100px] pl-[40px] "
+        style="background-image: url(./images/testimonial-img.png); background-position: center; background-repeat: no-repeat; border-radius: 40px;">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide w-full lg:w-[40%]">
+            <div class="bg-[#fff] p-8 rounded-lg shadow-lg w-full lg:w-[40%]">
+              <h6 class="text-h6 font-bold">Jhon Suria</h6>
+              <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectet</p>
+              <p class="text-sm leading-[30px] pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis omnis perferendis consequuntur quos
+                vero, quae temporibus. Nobis neque doloremque obcaecati aliquam tenetur perferendis amet quo. Beatae
+                earum alias numquam saepe.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide w-full lg:w-[40%]">
+            <div class="bg-[#fff] p-8 rounded-lg shadow-lg w-full lg:w-[40%]">
+              <h6 class="text-h6 font-bold">Jane </h6>
+              <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectet</p>
+              <p class="text-sm leading-[30px] pt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis omnis perferendis consequuntur quos
+                vero, quae temporibus. Nobis neque doloremque obcaecati aliquam tenetur perferendis amet quo. Beatae
+                earum alias numquam saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <footer class="bg-[#f5f5f5]">
+    <div class="container text-center py-6">
+      <div class="flex justify-center gap-4">
+        <a href="mailto:vaishnav.contact@gmail.com" class="text-black">
+          Deveoped my vaishnav
+        </a>
+      </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+  <script>
+    const navbar = document.getElementById("navHeader");
+    const bar = document.getElementById("navBar");
+    bar.addEventListener("click", (e) => {
+      console.log("clicked")
+      navbar.classList.toggle("hidden")
+    }) 
+  </script>
+
+  <script>
+    const swiper = new Swiper(".swiper-container", {
+      loop: true,
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+    });
+  
+
+  </script>
+</body>
+
+</html>
